@@ -1,0 +1,41 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+  <% let i = allListings.length %>
+  <% i = i-1 %>
+  <% for( i; i>= 0 ; i--){ %>
+  <a
+    href="/listing/<%= allListings[i]._id %>"
+    class="card col mt-3 listing-link "
+    style="width: 20rem"
+  >
+    <img class="card-img-top" src="<%= allListings[i].image %>" alt="Listing_image" />
+    <div class="card-img-overlay">Wanderlust</div>
+    <div class="card-body">
+      <p class="card-text"><b><%= allListings[i].title %></b></p>
+      &#2547; <%= allListings[i].price.toLocaleString("en-BD") %>
+    </div>
+  </a>
+  <% } %>
+</div>
+
+
+<!-- <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+  <% for( let listing of allListings){ %>
+  <a
+    href="/listing/<%= listing._id %>"
+    class="card col mt-3 listing-link "
+    style="width: 20rem"
+  >
+    <img class="card-img-top" src="<%= listing.image %>" alt="Listing_image" />
+    <div class="card-img-overlay">Wanderlust</div>
+    <div class="card-body">
+      <p class="card-text"><b><%= listing.title %></b></p>
+      &#2547; <%= listing.price.toLocaleString("en-BD") %>
+    </div>
+  </a>
+  <% } %>
+</div> -->
+
+
+

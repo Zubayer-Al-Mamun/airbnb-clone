@@ -1,0 +1,21 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="show-cont" style="padding: 10px 50px;">
+        <h3>Listing Details :</h3>
+        <div class="show-card d-flex flex-column align-items-center">
+            <div class="title-img">
+              <img class="show-img" src="<%= listing.image %>" alt="Listing_image" />
+              <p class="card-text"><b> <%= listing.title %> </b></p>
+            </div>
+            <div class="bio">
+              <%= listing.description %> <br />
+              <br />
+                <%= listing.location %> &nbsp  <%= listing.country %> <br />
+              <br />
+              &#2547; <%= listing.price.toLocaleString("en-BD") %><br>
+              <a class="edit-btn " href="/listing/<%= listing._id %>/edit"> <b>Edit</b></a>
+            </div>
+          </div>
+    </div>
+</body>

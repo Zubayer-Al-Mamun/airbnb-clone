@@ -1,0 +1,164 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+
+}
+
+.abc{
+    flex: 1;
+}
+
+
+.navbar {
+    background-color: red;
+} 
+
+.navbar form button {
+    padding: 6px;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.delete-form button {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+
+
+/* Card */
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.card {
+    border: none !important;
+    margin: 2rem 0;
+    text-decoration: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    /* width: 100% !important; */
+    object-fit: cover !important;
+    height: 16rem !important;
+}
+
+.card-img-overlay{
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+    font-size: 3rem;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.469);
+    opacity: 0%
+}
+.card-img-overlay:hover{
+    opacity: 100%;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    margin-right: 10px;
+
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.f-info {
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    text-align: center;
+}
+
+
+
+
+.add-btn{
+    background-color: #fe424d;
+    border: none;
+}
+
+.edit-btn{
+    background-color: #fe424d;
+    border: none;
+    margin: 20px 0;
+    text-decoration: none;
+    padding:0 1rem;
+    border-radius: 8px;
+    color: #222222;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.edit-btn:hover{
+    /* box-shadow: 2px 2px 5px black; */
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.426);
+    
+}
+
+.show-card{
+    text-align: center;
+}
+
+.show-img{
+    max-width: 80% ;
+    max-height: 60vh;
+    border-radius: 10px;
+}
+.bio{
+    text-align: start;
+    padding:1rem 3rem;
+    
+}
